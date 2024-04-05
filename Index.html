@@ -150,7 +150,7 @@
                         <td  >' + '<img class="Image" src="./images/' + feature.properties.Number + '.jpg" />' + '</td>\
                     </tr>\
                 </table>';
-                    layer.bindPopup(popupContent);
+                layer.bindPopup(popupContent,{keepInView:'flase'});
                     
                     // Add tooltip in the center of the polygon using feature bound
                     if (layer instanceof L.Polygon) {
