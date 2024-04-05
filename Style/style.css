@@ -1,0 +1,162 @@
+  #map {
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            top: 0px;
+            left: 0;
+            bottom: 0;
+            right: 0
+        }
+
+        .Detials {
+            font-size: 14px;
+            text-align: justify;
+        }
+
+        .Name {
+            font-size: 16px;
+            font-weight: bold;
+            text-align: center;
+        }
+        @media (max-width: 768px) {
+
+            .Details{
+                font-size: 12px;
+            text-align: justify;
+                /* Smaller text on smaller devices */
+            }
+            .Name {
+                font-size: 14px;
+                font-weight: bold;
+                text-align: center;
+            }
+            .leaflet-tooltip-permanent {
+                font-size: 9px;
+                /* Smaller tooltips on smaller devices */
+            }
+        }
+
+        .Image {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 100%;
+        }
+
+        .text-labels {
+            background-color: white;
+            padding: 2px;
+            border-radius: 3px;
+            text-align: center;
+            font-size: 14px;
+        }
+
+        .leaflet-tooltip-permanent {
+            border: none;
+            background-color: transparent;
+            box-shadow: none;
+            padding: 0;
+            text-shadow: -1px -1px 0 white,
+                0px -1px 0 white,
+                1px -1px 0 white,
+                1px 0px 0 white,
+                1px 1px 0 white,
+                0px 1px 0 white,
+                -1px 1px 0 white,
+                -1px 0 0 white;
+            font-size: 11px;
+            font-weight: bolder;
+        }
+
+        .leaflet-tooltip-right:before,
+        .leaflet-tooltip-right:after,
+        .leaflet-tooltip-left:before,
+        .leaflet-tooltip-left:after {
+            display: none;
+        }
+
+        @media (max-width: 480px) {
+            #toggleList {
+                font-size: 12px;
+                /* Adjusting toggle list size for very small devices */
+                background: aliceblue;
+                border-radius: 3px;
+                padding: 3px 3px 3px 3px;
+            }
+        }
+
+        #toggleList {
+            background: aliceblue;
+            border-radius: 3px;
+            padding: 5px 5px 5px 5px;
+            border-radius: 5px;
+        }
+
+        .switch {
+            position: relative;
+            display: inline-block;
+            width: 47px;
+            height: 17px;
+        }
+
+        /* Hide default HTML checkbox */
+
+        .switch input {
+            opacity: 0;
+            width: 0;
+            height: 0;
+        }
+
+        /* The slider */
+        .slider {
+            position: absolute;
+            cursor: pointer;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #ccc;
+            -webkit-transition: .4s;
+            transition: .4s;
+        }
+
+        .slider:before {
+            position: absolute;
+            content: "";
+            height: 15px;
+            width: 15px;
+            right: 24px;
+            top: 1px;
+            background-color: white;
+            -webkit-transition: .4s;
+            transition: .4s;
+        }
+
+        input:checked+.slider {
+            background-color: #2196F3;
+        }
+
+        input:focus+.slider {
+            box-shadow: 0 0 1px #2196F3;
+        }
+
+        input:checked+.slider:before {
+            -webkit-transform: translateX(40px);
+            -ms-transform: translateX(40px);
+            transform: translateX(22px);
+        }
+
+        /* Rounded sliders */
+        .slider.round {
+            border-radius: 20px;
+            width: 40px;
+        }
+
+        .slider.round:before {
+            border-radius: 50%;
+        }
+        .layer-label{
+            font-size: 14px;
+            font-weight:bold;
+            padding: 3px;
+        }
